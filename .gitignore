@@ -3,13 +3,38 @@ venv/
 .venv/
 env/
 
+# Variáveis de ambiente locais
+.env
+.env.*
+
 # Banco de dados local SQLite
+db.sqlite3
 *.sqlite3
 
 # Cache e arquivos temporários do Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Distribuição / build
+dist/
+build/
+*.egg-info/
+
+# Logs e arquivos locais
+*.log
+*.tmp
 
 # Configurações de IDEs
 .vscode/
 .idea/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
